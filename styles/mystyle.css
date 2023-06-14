@@ -17,10 +17,31 @@ p{
     font-size: 1.6rem;
     line-height: 2;
 }
+img{
+    max-width: 100%;
+}
 /*utilities*/
 .container{
     width: 70%;
     margin: 0 auto;
+}
+.flex-container{
+    display:flex;
+    margin: 1rem 0
+    
+}
+a.btn{
+    display:block;
+    width:210px;
+    background-color:rgb(255, 109, 4);
+    color: white;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /*header*/
 header.site-header{
@@ -28,6 +49,10 @@ header.site-header{
     height: 40vh;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
 }
 header.site-header h1{
     font-size: 3.5rem;
@@ -41,11 +66,61 @@ header.site-header p{
 nav.menu a{
     color: white;
     font-size: 1.6rem;
+    padding: 1rem;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
 }
 /*main*/
+.about-item{
+    padding: 1rem;
+    margin-right: 1rem;
+}
+.about-item p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+.about-item img{
+    display: block;
+    margin: 1rem auto;
+}
 .about-us h2{
     font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 2rem;
 }
 .about-item h3{
     font-size: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+/*houses*/
+.house-container{
+    display: flex;
+}
+.house-item h3{
+    font-size: 2.5rem;
+}
+.house-item{
+    background-color: #dedede;
+    margin-right: 1rem;
+}
+.text-info{
+    font-size: 1.6rem;
+}
+.text-price{
+    color: rgb(106, 163, 106);
+    font-size: 1.6rem;
+}
+.hp-container{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-container{
+    display:flex;
 }
